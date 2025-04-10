@@ -6,7 +6,7 @@
 /*   By: agorski <agorski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 14:10:59 by agorski           #+#    #+#             */
-/*   Updated: 2025/04/10 14:52:59 by agorski          ###   ########.fr       */
+/*   Updated: 2025/04/10 15:04:37 by agorski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ PhoneBook::PhoneBook()
 PhoneBook::~PhoneBook()
 {
 }
-void PhoneBook::addContact(string FirstName, string LastName, string Nickname, string PhoneNumber, string DarkestSecret)
+void PhoneBook::addContact( std::string FirstName,  std::string LastName,  std::string Nickname,  std::string PhoneNumber,  std::string DarkestSecret)
 {
     if (index < 8)
     {
@@ -39,10 +39,5 @@ void PhoneBook::displayContacts()
 {
     std::cout << "---------------------------------------------" << std::endl;
     std::cout << "|     Index|First Name| Last Name|  Nickname|" << std::endl;
-    for (int i = 1; i <= count; i++)
-    {
-        std::cout << std::setw(10) << i << "|";
-        std::cout << std::setw(10) << contacts[i - 1].FirstName << "|";
-        
-    }
+
 }

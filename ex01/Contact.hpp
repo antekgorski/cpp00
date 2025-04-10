@@ -6,7 +6,7 @@
 /*   By: agorski <agorski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 15:44:13 by agorski           #+#    #+#             */
-/*   Updated: 2025/04/10 14:56:54 by agorski          ###   ########.fr       */
+/*   Updated: 2025/04/10 15:11:55 by agorski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,7 @@
 
 # include <iostream>
 # include <string>
-
-using std::string;
+# include <iomanip>
 
 class Contact
 {
@@ -31,8 +30,8 @@ private:
     
 public:
     Contact();
-    Contact(string FirstName, string LastName, string Nickname, string PhoneNumber, string DarkestSecret);
-    Contact::getContact();
+    Contact( std::string FirstName,  std::string LastName,  std::string Nickname,  std::string PhoneNumber,  std::string DarkestSecret);
+    std::string getContact();
 };
 
 #endif

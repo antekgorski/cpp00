@@ -6,7 +6,7 @@
 /*   By: agorski <agorski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 15:46:06 by agorski           #+#    #+#             */
-/*   Updated: 2025/04/10 14:55:31 by agorski          ###   ########.fr       */
+/*   Updated: 2025/04/10 15:02:57 by agorski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ private:
 public:
     PhoneBook();
     ~PhoneBook();
-    void addContact(string FirstName, string LastName, string Nickname, string PhoneNumber, string DarkestSecret);
+    void addContact( std::string FirstName,  std::string LastName,  std::string Nickname,  std::string PhoneNumber,  std::string DarkestSecret);
     void displayContacts();
 };
 
