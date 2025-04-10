@@ -6,7 +6,7 @@
 /*   By: agorski <agorski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 15:44:13 by agorski           #+#    #+#             */
-/*   Updated: 2025/04/09 19:32:55 by agorski          ###   ########.fr       */
+/*   Updated: 2025/04/10 14:56:54 by agorski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ private:
 public:
     Contact();
     Contact(string FirstName, string LastName, string Nickname, string PhoneNumber, string DarkestSecret);
+    Contact::getContact();
 };
 
 #endif
