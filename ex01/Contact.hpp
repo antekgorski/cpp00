@@ -6,7 +6,7 @@
 /*   By: agorski <agorski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 15:44:13 by agorski           #+#    #+#             */
-/*   Updated: 2025/04/11 17:06:34 by agorski          ###   ########.fr       */
+/*   Updated: 2025/04/12 21:25:31 by agorski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ private:
     std::string DarkestSecret;
     
 public:
+    //constructor
+    Contact();
     //seters
     void setFirstName(std::string FirstName);
     void setLastName(std::string LastName);
@@ -40,7 +42,8 @@ public:
     std::string getPhoneNumber();
     std::string getDarkestSecret();
     //other methods
-    void showContactDetails(int index);
+    void showContactDetails();
+    bool isEmpty();
 };
 
 #endif
